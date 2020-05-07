@@ -349,7 +349,7 @@ macro(add_qt_ios_app TARGET)
     if(QT_IOS_TEAM_ID)
         qt_ios_set_xcode_property(${QT_IOS_TARGET} DEVELOPMENT_TEAM ${QT_IOS_TEAM_ID} "All")
     endif()
-    if(QT_IOS_TEAM_ID)
+    if(QT_IOS_PROVISIONING_PROFILE_SPECIFIER)
         qt_ios_set_xcode_property(${QT_IOS_TARGET} PROVISIONING_PROFILE_SPECIFIER ${QT_IOS_PROVISIONING_PROFILE_SPECIFIER} "All")
     endif()
 
